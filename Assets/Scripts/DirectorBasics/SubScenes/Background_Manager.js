@@ -1,5 +1,5 @@
 //@input SceneObject parent
-//@input Asset.Material rainMaterial
+//@input Asset.Material backgroundMaterial
 
 //_________________________Director Setup_________________________//
 script.subScene = new global.SubScene(script, script.parent);
@@ -14,16 +14,11 @@ script.subScene.SetUpdate(Update);
 
 //_________________________Director_Functions_____________________//
 function Start() {}
-function OnLateStart() {
-  animFadeRain.GoTo(1);
-}
+function OnLateStart() {}
 function Update() {}
-function Stop() {
-  animFadeRain.Reset();
-}
+function Stop() {}
 //___________________________Functions__________________________//
 
 //___________________________Animations_________________________//
-const animFadeRain = new Animation(script.getSceneObject(), 1.5, (ratio) => {
-  script.rainMaterial.mainPass.alphaStart = ratio;
-});
+
+// yRatio

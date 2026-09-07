@@ -2799,6 +2799,84 @@ Nodes:
       PositionY: -1476
       TemplateID: node_util_comment
       Title1: ""
+    Node42:
+      DependencyIndex: 101
+      LevelID: 34
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Channels:
+          ItemIndex: 5
+          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
+        Default:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        EnableMax:
+          Variable: false
+        EnableMin:
+          Variable: false
+        Group:
+          String: ""
+        Max:
+          Variable: 1.0
+        Min:
+          Variable: 0.0
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        ScriptName:
+          String: Tweak_N34
+        SortIndex:
+          Variable: 0
+        Step:
+          Variable: 0.009999999776482582
+        Title:
+          String: Custom Float
+        Tooltip:
+          String: ""
+      PositionX: 2631
+      PositionY: 298
+      TemplateID: nodes_inputs_parameters_float
+      Title1: Float Parameter
+      Title2: Custom Float
+    Node43:
+      DependencyIndex: 102
+      LevelID: 38
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Channels:
+          ItemIndex: 5
+          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
+        Default:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        EnableMax:
+          Variable: false
+        EnableMin:
+          Variable: false
+        Group:
+          String: ""
+        Max:
+          Variable: 1.0
+        Min:
+          Variable: 0.0
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        ScriptName:
+          String: Tweak_N38
+        SortIndex:
+          Variable: 0
+        Step:
+          Variable: 0.009999999776482582
+        Title:
+          String: Custom Float
+        Tooltip:
+          String: ""
+      PositionX: 2646
+      PositionY: 403
+      TemplateID: nodes_inputs_parameters_float
+      Title1: Float Parameter
+      Title2: Custom Float
     Node5:
       DependencyIndex: 6
       LevelID: 13

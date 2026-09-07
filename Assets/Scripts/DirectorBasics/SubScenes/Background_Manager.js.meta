@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/5d89f038-f31f-40a3-b10a-69bc734f7a25>
+- !<AssetImportMetadata/e9336d1f-1ab1-44e0-856b-65292237aa4e>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> 9b58da76-d22a-4e9b-8b06-3d4bc9f2631b
+    JavaScriptAsset: !<reference> e46a6fb1-7ee2-4761-80fa-152956118a00
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 9b58da76-d22a-4e9b-8b06-3d4bc9f2631b
+  PrimaryAsset: !<reference> e46a6fb1-7ee2-4761-80fa-152956118a00
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> bc5e411d-ff7a-474c-815e-15964a58b9c1
+    JavaScriptAsset: !<own> 2e3f8617-9090-408c-8cda-1b4a005cbb4f
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/bc5e411d-ff7a-474c-815e-15964a58b9c1>
+- !<ScriptAssetData/2e3f8617-9090-408c-8cda-1b4a005cbb4f>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -23,15 +23,12 @@
   VersionMinor: 0
   VersionPatch: 0
   VersionPrerelease: ""
-  ComponentUid: 9df35294-f2f9-447e-81c2-1c1a706372aa
+  ComponentUid: 6d9bd6df-4eac-4e6a-9037-36ff18a6573c
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    experiences: false
-    hintExperienceMat: false
-    hintIntroMat: false
+    backgroundMaterial: false
     parent: false
-    tapToSprayMat: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -42,11 +39,7 @@
     []
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      experiences: !<string[]>
-        []
-      hintIntroMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      hintExperienceMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      tapToSprayMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      backgroundMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
