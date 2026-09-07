@@ -1,0 +1,42 @@
+- !<ObjectPrefab/9a010298-1fad-4d74-87fe-ec7faa5c6001>
+  PackagePath: ""
+  objects:
+    - !<own> dea99302-8640-4c18-8a0b-c171ef971fb7
+  LazyLoading: false
+  RetainAssets: true
+  PreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/dea99302-8640-4c18-8a0b-c171ef971fb7>
+  PrefabRemaps:
+    - dea99302-8640-4c18-8a0b-c171ef971fb7: dea99302-8640-4c18-75f4-3e8e1068e048
+    - e9b3c388-50b0-4616-87bb-1a2c7fea3aea: e9b3c388-50b0-4616-7844-e5d38015c515
+  Name: Snowflake_VFX__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -61.728401}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e9b3c388-50b0-4616-87bb-1a2c7fea3aea
+- !<VFXComponent/e9b3c388-50b0-4616-87bb-1a2c7fea3aea>
+  PrefabRemaps:
+    []
+  Name: VFX
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> da99c814-6650-4a6a-a790-359e76639cca
+  SystemRenderLayerInfoMap:
+    0: !<VFXSystemRenderLayerInfo>
+      RenderLayerInfoMap:
+        render_0_0: !<VFXRenderLayerInfo>
+          Enabled: false
+          RenderLayers: 1

@@ -1,0 +1,55 @@
+- !<AssetImportMetadata/5039a4dd-4144-71da-2f94-9d7befacc3c7>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 0f757513-a5d8-4f0f-803f-50bccf14bf03
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 0f757513-a5d8-4f0f-803f-50bccf14bf03
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: X0t6adroTGASyvvQnuOOr
+  AssetDataMap:
+    ObjectPrefab: !<own> a8295555-c3e8-4f89-b6bf-63673d1ee569
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXComponent/326500d5-137c-4cf5-68bc-5e342adca641>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 76592e65-1c86-44f8-8beb-656f2d85f90b
+  SystemRenderLayerInfoMap:
+    0: !<VFXSystemRenderLayerInfo>
+      RenderLayerInfoMap:
+        render_0_0: !<VFXRenderLayerInfo>
+          Enabled: false
+          RenderLayers: 1
+- !<ObjectPrefabAssetData/a8295555-c3e8-4f89-b6bf-63673d1ee569>
+  Prototype: !<ObjectOwner/e4c11f7d-23ad-4112-9f95-8df6d8f26ad4>
+    PackagePath: ""
+    objects:
+      - !<own> eea06134-e479-47c0-5b36-dd2d827f8935
+- !<SceneObject/eea06134-e479-47c0-5b36-dd2d827f8935>
+  PrefabRemaps:
+    []
+  Name: RainVFX__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 326500d5-137c-4cf5-68bc-5e342adca641

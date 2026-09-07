@@ -1,0 +1,40 @@
+- !<AssetImportMetadata/8936eed0-053f-609b-e7fb-e31893141420>
+  ImportedAssetIds:
+    VFXGraph: !<reference> 76592e65-1c86-44f8-8beb-656f2d85f90b
+  ImporterName: VFXAssetImporter
+  PrimaryAsset: !<reference> 76592e65-1c86-44f8-8beb-656f2d85f90b
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: X0t6adroTGASyvvQnuOOr
+  AssetDataMap:
+    VFXGraph: !<own> b6021c64-f72e-440a-bc52-1dd309ee5e2f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXAssetData/b6021c64-f72e-440a-bc52-1dd309ee5e2f>
+  SystemPassProperties:
+    0: !<VFXSystemPassProperties>
+      PassPropertiesMap:
+        render_0_0: !<VFXPassProperties>
+          PropertyMap:
+            {}
+          Defines:
+            []
+          Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+        simulate_0: !<VFXPassProperties>
+          PropertyMap:
+            groundHeight:
+              typeIdx: 1
+              value: -7.000000
+          Defines:
+            []
+          Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+        feedback_0: !<VFXPassProperties>
+          PropertyMap:
+            {}
+          Defines:
+            []
+          Mesh: !<reference> 00000000-0000-0000-0000-000000000000

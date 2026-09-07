@@ -1,0 +1,38 @@
+- !<NativePackageDescriptor/af0cd4c8-0e52-4887-b699-4136295e05e5>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 22
+    patch: 1
+    build: 26062503
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: Rain VFX This package contains the high quality Rain VFX asset. You can customize this particle system using VFX Editor. Click here to learn more about VFX Editor
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 101
+  ExportUid: 94105394-c070-4207-b3ea-88eb5f4dea3e
+  ComponentUid: 872d9c3b-f571-4512-827b-9daa82590a62
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  VersionPrerelease: ""
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

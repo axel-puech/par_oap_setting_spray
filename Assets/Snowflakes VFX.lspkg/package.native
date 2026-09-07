@@ -1,0 +1,38 @@
+- !<NativePackageDescriptor/6d3cbef9-0a64-4c15-a8a8-d202c31480e8>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 22
+    patch: 1
+    build: 26062503
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: "Snowflakes VFX This VFX asset generates unique snowflakes procedurally. There are controls for gravity, color, animation toggle, gradient color, iciness, snowflake complexity and etc, Click here to learn more about VFX Editor"
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 101
+  ExportUid: ee0d2c5d-2083-4a07-b805-039116c511c3
+  ComponentUid: 6c4fb83d-2db4-400e-b41e-1aa1e62e0523
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  VersionPrerelease: ""
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0
