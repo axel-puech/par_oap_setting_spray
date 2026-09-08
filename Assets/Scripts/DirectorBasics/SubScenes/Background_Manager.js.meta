@@ -27,8 +27,12 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    backgroundMaterial: false
+    backgroundFillDuration: false
+    backgroundMat: false
+    incrementByTap: false
+    minMaxYRatio: false
     parent: false
+    texturesBackground: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -39,7 +43,12 @@
     []
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      backgroundMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      backgroundMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      minMaxYRatio: !<Vec2> {x: 0.000000, y: 0.000000}
+      incrementByTap: !<float> 0.000000
+      backgroundFillDuration: 0.500000
+      texturesBackground: !<reference.Texture[]>
+        []
   ScriptTypes:
     -
       {}

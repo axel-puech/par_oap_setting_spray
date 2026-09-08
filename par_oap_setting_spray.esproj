@@ -13,7 +13,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: DirectorTemplate
+  lensName: OAP Spray
   lensDescriptors:
     []
   lensApplicableContext:
@@ -27,7 +27,7 @@ metaInfo:
     - Mobile
     - CameraKit
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: d9909532e4698d3b8f95545c08f84b2c
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.0.10.24042400

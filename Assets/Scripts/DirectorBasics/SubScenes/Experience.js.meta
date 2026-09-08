@@ -27,11 +27,15 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    delayBeforeExperienceHint: false
     experiences: false
     hintExperienceMat: false
     hintIntroMat: false
+    numberOfTapMax: false
+    openedSpray: false
     parent: false
     tapToSprayMat: false
+    tapToStopMat: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -47,6 +51,10 @@
       hintIntroMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
       hintExperienceMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
       tapToSprayMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      tapToStopMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      openedSpray: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      delayBeforeExperienceHint: 0.500000
+      numberOfTapMax: 15
   ScriptTypes:
     -
       {}

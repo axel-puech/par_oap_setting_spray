@@ -27,8 +27,14 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    case0StopAngle: false
+    clockwise: false
+    continuousSpinSpeed: false
+    fullTurns: false
     offsetYWheel: false
     parent: false
+    spinDuration: false
+    targetCase: false
     wheelParent: false
     wheelRotation: false
   ScriptTypesHidden:
@@ -44,6 +50,12 @@
       wheelParent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       offsetYWheel: !<float> 0.000000
       wheelRotation: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      continuousSpinSpeed: !<float> 180.000000
+      targetCase: 0
+      fullTurns: 5
+      spinDuration: !<float> 4.000000
+      case0StopAngle: !<float> 0.000000
+      clockwise: true
   ScriptTypes:
     -
       {}

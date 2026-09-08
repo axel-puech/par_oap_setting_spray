@@ -27,8 +27,8 @@ Nodes:
             Multiplied with the 'Base Texture' otherwise.
         UniqueID:
           String: Base Color
-      PositionX: 2031
-      PositionY: -1366
+      PositionX: 1924
+      PositionY: -609
       TemplateID: nodes_inputs_parameters_color
       Title1: Color Parameter
       Title2: Base Color
@@ -59,8 +59,8 @@ Nodes:
           String: "Most materials use a base texture (albedo), but disabling it means the base texture will be considered white, and 'Base Color' will solely control the color."
         UniqueID:
           String: Base Texture
-      PositionX: 2033
-      PositionY: -1259
+      PositionX: 1926
+      PositionY: -502
       TemplateID: nodes_inputs_parameters_bool
       Title1: Bool Parameter
       Title2: Base Texture
@@ -1257,8 +1257,8 @@ Nodes:
           Variable: [0.0, 0.0, 0.0, 0.0]
         Title1:
           String: Base Color
-      PositionX: 2357
-      PositionY: -1382
+      PositionX: 2250
+      PositionY: -625
       TemplateID: nodes_main_subgraph
       Title1: Base Color
     Node17:
@@ -1291,8 +1291,8 @@ Nodes:
             'Opacity Texture' is only available if 'Blend Mode' is not 'Disabled'.
         UniqueID:
           String: Opacity Texture
-      PositionX: 2336
-      PositionY: -691
+      PositionX: 2401
+      PositionY: 107
       TemplateID: nodes_inputs_parameters_bool
       Title1: Bool Parameter
       Title2: Opacity Texture
@@ -1325,8 +1325,8 @@ Nodes:
           String: Texture
         Tooltip:
           String: ""
-      PositionX: 2265
-      PositionY: -588
+      PositionX: 2330
+      PositionY: 210
       TemplateID: nodes_inputs_parameters_texture2d_object
       Title1: Texture 2D Object Parameter
       Title2: Texture
@@ -1361,8 +1361,8 @@ Nodes:
           String: Transformed UV 3
         Tooltip:
           String: Specifies the UV set used as the base on top of which the transform is applied.
-      PositionX: 2318
-      PositionY: -479
+      PositionX: 2383
+      PositionY: 319
       TemplateID: nodes_inputs_parameters_droplist
       Title1: DropList Parameter
       Title2: Texture UV
@@ -1395,8 +1395,8 @@ Nodes:
           String: Texture
         Tooltip:
           String: ""
-      PositionX: 1960
-      PositionY: -1146
+      PositionX: 1853
+      PositionY: -389
       TemplateID: nodes_inputs_parameters_texture2d_object
       Title1: Texture 2D Object Parameter
       Title2: Texture
@@ -1434,8 +1434,8 @@ Nodes:
           String: Opacity Multiplier
         Tooltip:
           String: "The 'Opacity Texture' value will be multiplied with the Base Texture's alpha (which is 1 for textures without alpha) and 'Opacity Multiplier' to get the final opacity."
-      PositionX: 2338
-      PositionY: -356
+      PositionX: 2403
+      PositionY: 442
       TemplateID: nodes_inputs_parameters_float
       Title1: Float Parameter
       Title2: Opacity Multiplier
@@ -2026,12 +2026,83 @@ Nodes:
           Variable: [0.0, 0.0, 0.0, 0.0]
         Title1:
           String: Opacity
-      PositionX: 2673
-      PositionY: -690
+      PositionX: 2738
+      PositionY: 108
       TemplateID: nodes_main_subgraph
       Title1: Opacity
     Node22:
       DependencyIndex: 81
+      LevelID: 33
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Channels:
+          ItemIndex: 5
+          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
+        Default:
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        EnableMax:
+          Variable: true
+        EnableMin:
+          Variable: true
+        Group:
+          String: ""
+        Max:
+          Variable: 1.0
+        Min:
+          Variable: 0.0
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        ScriptName:
+          String: alphaRatio
+        SortIndex:
+          Variable: 0
+        Step:
+          Variable: 0.009999999776482582
+        Title:
+          String: AlphaRatio
+        Tooltip:
+          String: ""
+      PositionX: 3158
+      PositionY: 184
+      TemplateID: nodes_inputs_parameters_float
+      Title1: Float Parameter
+      Title2: AlphaRatio
+    Node23:
+      DependencyIndex: 82
+      LevelID: 32
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Input0:
+          Connection0:
+            NodeLevelID: 39
+            PortID: SubGraphUniqueID158
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Input1:
+          Connection0:
+            NodeLevelID: 33
+            PortID: Output
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Inputs:
+          ItemIndex: 0
+          ItemList: "2 : 3 : 4 : 5 : 6"
+        Output:
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+        Type0:
+          ItemIndex: 0
+          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
+        Type1:
+          ItemIndex: 0
+          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
+      PositionX: 3124
+      PositionY: -188
+      TemplateID: nodes_math_multiply
+      Title1: Multiply
+    Node24:
+      DependencyIndex: 83
       LevelID: 1
       NodeCount: 0
       NodeType: 1
@@ -2060,568 +2131,22 @@ Nodes:
           Variable: [0.0, 0.0, 0.0, 0.0]
         Value2:
           Connection0:
-            NodeLevelID: 39
-            PortID: SubGraphUniqueID158
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value3:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value4:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-      PositionX: 3244
-      PositionY: -846
-      TemplateID: node_channels_combine
-      Title1: Construct Vector
-    Node22CheckValue: false
-    Node23:
-      DependencyIndex: 82
-      LevelID: 36
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Input:
-          Connection0:
-            NodeLevelID: 1
-            PortID: Value
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Swizzle:
-          String: w
-      PositionX: 3562
-      PositionY: -707
-      TemplateID: node_channels_swizzle
-      Title1: Swizzle
-    Node24:
-      DependencyIndex: 83
-      LevelID: 77
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Channels:
-          ItemIndex: 5
-          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
-        Default:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        EnableMax:
-          Variable: true
-        EnableMin:
-          Variable: true
-        Group:
-          String: ""
-        Max:
-          Variable: 1.0
-        Min:
-          Variable: 0.0
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        ScriptName:
-          String: Tweak_N77
-        SortIndex:
-          Variable: 0
-        Step:
-          Variable: 0.009999999776482582
-        Title:
-          String: A
-        Tooltip:
-          String: ""
-      PositionX: 3910
-      PositionY: -305
-      TemplateID: nodes_inputs_parameters_float
-      Title1: Float Parameter
-      Title2: A
-    Node25:
-      DependencyIndex: 84
-      LevelID: 78
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Channels:
-          ItemIndex: 5
-          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
-        Default:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        EnableMax:
-          Variable: true
-        EnableMin:
-          Variable: true
-        Group:
-          String: ""
-        Max:
-          Variable: 1.0
-        Min:
-          Variable: 0.0
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        ScriptName:
-          String: Tweak_N78
-        SortIndex:
-          Variable: 0
-        Step:
-          Variable: 0.009999999776482582
-        Title:
-          String: B
-        Tooltip:
-          String: ""
-      PositionX: 3919
-      PositionY: -215
-      TemplateID: nodes_inputs_parameters_float
-      Title1: Float Parameter
-      Title2: B
-    Node26:
-      DependencyIndex: 85
-      LevelID: 32
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Index:
-          Variable: 0
-        UVCoord:
-          IOType: 1
-          Variable: [0.0, 0.0]
-      PositionX: 3027
-      PositionY: -73
-      TemplateID: node_effect_global_surface_uvcoord0
-      Title1: Surface UV Coord
-    Node27:
-      DependencyIndex: 86
-      LevelID: 75
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Channels:
-          ItemIndex: 5
-          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
-        Default:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        EnableMax:
-          Variable: true
-        EnableMin:
-          Variable: true
-        Group:
-          String: ""
-        Max:
-          Variable: 3.0
-        Min:
-          Variable: 0.0
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        ScriptName:
-          String: Tweak_N75
-        SortIndex:
-          Variable: 0
-        Step:
-          Variable: 0.009999999776482582
-        Title:
-          String: X
-        Tooltip:
-          String: ""
-      PositionX: 3093
-      PositionY: 81
-      TemplateID: nodes_inputs_parameters_float
-      Title1: Float Parameter
-      Title2: X
-    Node28:
-      DependencyIndex: 87
-      LevelID: 47
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Dimension1:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3"
-        Dimension2:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : disabled"
-        Dimension3:
-          ItemIndex: 2
-          ItemList: "1 : 2 : disabled"
-        Dimension4:
-          ItemIndex: 0
-          ItemList: "1 : 2 : disabled"
-        IsColor:
-          Variable: false
-        Value:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value1:
-          Variable: [0.5, 0.0, 0.0, 0.0]
-        Value2:
-          Variable: [0.5, 0.0, 0.0, 0.0]
-        Value3:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value4:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-      PositionX: 2833
-      PositionY: 324
-      TemplateID: node_channels_combine
-      Title1: Construct Vector
-    Node29:
-      DependencyIndex: 88
-      LevelID: 70
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Dimension1:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3"
-        Dimension2:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : disabled"
-        Dimension3:
-          ItemIndex: 2
-          ItemList: "1 : 2 : disabled"
-        Dimension4:
-          ItemIndex: 0
-          ItemList: "1 : 2 : disabled"
-        Value:
-          Connection0:
-            NodeLevelID: 47
-            PortID: Value
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value1:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value2:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value3:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value4:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-      PositionX: 3151
-      PositionY: 326
-      TemplateID: node_channels_split
-      Title1: Split Vector
-    Node3:
-      DependencyIndex: 3
-      LevelID: 27
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Group:
-          String: Base Texture
-        ItemCount:
-          Variable: 4
-        Output:
-          IOType: 1
-          Variable: 0.0
-        ScriptName:
-          String: NODE_27_DROPLIST_ITEM
-        SortIndex:
-          Variable: 3
-        SpecifySpecConst:
-          Variable: false
-        Title:
-          String: Texture UV
-        Title0:
-          String: Mesh UV 0
-        Title1:
-          String: Mesh UV 1
-        Title2:
-          String: Transformed UV 2
-        Title3:
-          String: Transformed UV 3
-        Tooltip:
-          String: Specifies the UV set used as the base on top of which the transform is applied.
-      PositionX: 2005
-      PositionY: -1041
-      TemplateID: nodes_inputs_parameters_droplist
-      Title1: DropList Parameter
-      Title2: Texture UV
-    Node30:
-      DependencyIndex: 89
-      LevelID: 76
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Input0:
-          Connection0:
-            NodeLevelID: 75
-            PortID: Output
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Input1:
-          Connection0:
-            NodeLevelID: 70
-            PortID: Value1
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Inputs:
-          ItemIndex: 0
-          ItemList: "2 : 3 : 4 : 5 : 6"
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Type0:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-        Type1:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-      PositionX: 3339
-      PositionY: 170
-      TemplateID: nodes_math_multiply
-      Title1: Multiply
-    Node31:
-      DependencyIndex: 90
-      LevelID: 73
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Channels:
-          ItemIndex: 5
-          ItemList: "xyzw : rgba : xyz : rgb : xy : x"
-        Default:
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        EnableMax:
-          Variable: true
-        EnableMin:
-          Variable: true
-        Group:
-          String: ""
-        Max:
-          Variable: 1.0
-        Min:
-          Variable: -3.0
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        ScriptName:
-          String: yRatio
-        SortIndex:
-          Variable: 0
-        Step:
-          Variable: 0.009999999776482582
-        Title:
-          String: YRatio
-        Tooltip:
-          String: ""
-      PositionX: 3140
-      PositionY: 592
-      TemplateID: nodes_inputs_parameters_float
-      Title1: Float Parameter
-      Title2: YRatio
-    Node32:
-      DependencyIndex: 91
-      LevelID: 72
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Input0:
-          Connection0:
-            NodeLevelID: 70
-            PortID: Value2
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Input1:
-          Connection0:
-            NodeLevelID: 73
-            PortID: Output
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Inputs:
-          ItemIndex: 0
-          ItemList: "2 : 3 : 4 : 5 : 6"
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Type0:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-        Type1:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-      PositionX: 3394
-      PositionY: 472
-      TemplateID: nodes_math_multiply
-      Title1: Multiply
-    Node33:
-      DependencyIndex: 92
-      LevelID: 74
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Dimension1:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3"
-        Dimension2:
-          ItemIndex: 0
-          ItemList: "1 : 2 : 3 : disabled"
-        Dimension3:
-          ItemIndex: 2
-          ItemList: "1 : 2 : disabled"
-        Dimension4:
-          ItemIndex: 0
-          ItemList: "1 : 2 : disabled"
-        IsColor:
-          Variable: false
-        Value:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value1:
-          Connection0:
-            NodeLevelID: 76
-            PortID: Output
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value2:
-          Connection0:
-            NodeLevelID: 72
-            PortID: Output
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value3:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value4:
-          Variable: [0.0, 0.0, 0.0, 0.0]
-      PositionX: 3551
-      PositionY: 210
-      TemplateID: node_channels_combine
-      Title1: Construct Vector
-    Node34:
-      DependencyIndex: 93
-      LevelID: 45
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Input0:
-          Connection0:
             NodeLevelID: 32
-            PortID: UVCoord
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Input1:
-          Connection0:
-            NodeLevelID: 74
-            PortID: Value
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Output:
-          IOType: 1
-          Variable: 0.0
-        Type0:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-        Type1:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-      PositionX: 4019
-      PositionY: -12
-      TemplateID: nodes_math_distance
-      Title1: Distance
-    Node35:
-      DependencyIndex: 94
-      LevelID: 46
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Input0:
-          Connection0:
-            NodeLevelID: 77
-            PortID: Output
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Input1:
-          Connection0:
-            NodeLevelID: 78
-            PortID: Output
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Input2:
-          Connection0:
-            NodeLevelID: 45
-            PortID: Output
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Type0:
-          ItemIndex: 6
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-        Type1:
-          ItemIndex: 6
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-        Type2:
-          ItemIndex: 6
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-      PositionX: 4583
-      PositionY: -258
-      TemplateID: nodes_math_smoothstep
-      Title1: Smoothstep
-    Node36:
-      DependencyIndex: 95
-      LevelID: 33
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Input0:
-          Connection0:
-            NodeLevelID: 36
-            PortID: Output
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Input1:
-          Connection0:
-            NodeLevelID: 46
-            PortID: Output
-          Variable: [1.0, 1.0, 1.0, 1.0]
-        Inputs:
-          ItemIndex: 0
-          ItemList: "2 : 3 : 4 : 5 : 6"
-        Output:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Type0:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-        Type1:
-          ItemIndex: 0
-          ItemList: "auto : xyzw : rgba : xyz : rgb : xy : x"
-      PositionX: 3843
-      PositionY: -585
-      TemplateID: nodes_math_multiply
-      Title1: Multiply
-    Node37:
-      DependencyIndex: 96
-      LevelID: 37
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Dimension1:
-          ItemIndex: 2
-          ItemList: "1 : 2 : 3"
-        Dimension2:
-          ItemIndex: 0
-          ItemList: "1 : disabled"
-        Dimension3:
-          ItemIndex: 0
-          ItemList: disabled
-        Dimension4:
-          ItemIndex: 0
-          ItemList: disabled
-        IsColor:
-          Variable: false
-        Value:
-          IOType: 1
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value1:
-          Connection0:
-            NodeLevelID: 1
-            PortID: Value
-          Variable: [0.0, 0.0, 0.0, 0.0]
-        Value2:
-          Connection0:
-            NodeLevelID: 33
             PortID: Output
           Variable: [0.0, 0.0, 0.0, 0.0]
         Value3:
           Variable: [0.0, 0.0, 0.0, 0.0]
         Value4:
           Variable: [0.0, 0.0, 0.0, 0.0]
-      PositionX: 4733
-      PositionY: -852
+      PositionX: 3075
+      PositionY: -645
       TemplateID: node_channels_combine
       Title1: Construct Vector
-    Node37CheckValue: false
-    Node38:
+    Node24CheckValue: false
+    Node25:
       CommentSizeX: 0
       CommentSizeY: 0
-      DependencyIndex: 97
+      DependencyIndex: 84
       LevelID: 4
       NodeCount: 0
       NodeType: 1
@@ -2636,7 +2161,7 @@ Nodes:
         FinalColor:
           ClassType1: COLOR
           Connection0:
-            NodeLevelID: 37
+            NodeLevelID: 1
             PortID: Value
           Variable: [1.0, 1.0, 1.0, 1.0]
         FinalColor1:
@@ -2681,15 +2206,15 @@ Nodes:
           Variable: [0.0, 0.0, 1.0]
         WriteDepth:
           Variable: false
-      PositionX: 5116
-      PositionY: -895
+      PositionX: 3393
+      PositionY: -647
       TemplateID: nodes_main_graph
       Title1: Shader
       Title2: 3D
-    Node39:
+    Node26:
       CommentSizeX: 652
       CommentSizeY: 1292
-      DependencyIndex: 98
+      DependencyIndex: 85
       LevelID: 147
       NodeCount: 0
       NodeType: 1
@@ -2713,6 +2238,96 @@ Nodes:
       PositionY: -714
       TemplateID: node_util_comment
       Title1: ""
+    Node27:
+      CommentSizeX: 747
+      CommentSizeY: 641
+      DependencyIndex: 86
+      LevelID: 71
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Color:
+          ClassType1: COLOR
+          Variable: [0.4000000059604645, 0.699999988079071, 1.0, 0.10000000149011612]
+        Comment:
+          String: Opacity
+        NewComment:
+          ClassType1: TEXT
+          String: Opacity
+        NewToolTip:
+          ClassType1: TEXT
+          String: ""
+        Tooltip:
+          String: ""
+        Upgraded:
+          Variable: true
+      PositionX: 2220
+      PositionY: -10
+      TemplateID: node_util_comment
+      Title1: ""
+    Node28:
+      CommentSizeX: 749
+      CommentSizeY: 604
+      DependencyIndex: 87
+      LevelID: 368
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Color:
+          ClassType1: COLOR
+          Variable: [0.4000000059604645, 0.699999988079071, 1.0, 0.10000000149011612]
+        Comment:
+          String: Base Color
+        NewComment:
+          ClassType1: TEXT
+          String: Base Color
+        NewToolTip:
+          ClassType1: TEXT
+          String: ""
+        Tooltip:
+          String: ""
+        Upgraded:
+          Variable: true
+      PositionX: 1766
+      PositionY: -719
+      TemplateID: node_util_comment
+      Title1: ""
+    Node3:
+      DependencyIndex: 3
+      LevelID: 27
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Group:
+          String: Base Texture
+        ItemCount:
+          Variable: 4
+        Output:
+          IOType: 1
+          Variable: 0.0
+        ScriptName:
+          String: NODE_27_DROPLIST_ITEM
+        SortIndex:
+          Variable: 3
+        SpecifySpecConst:
+          Variable: false
+        Title:
+          String: Texture UV
+        Title0:
+          String: Mesh UV 0
+        Title1:
+          String: Mesh UV 1
+        Title2:
+          String: Transformed UV 2
+        Title3:
+          String: Transformed UV 3
+        Tooltip:
+          String: Specifies the UV set used as the base on top of which the transform is applied.
+      PositionX: 1898
+      PositionY: -284
+      TemplateID: nodes_inputs_parameters_droplist
+      Title1: DropList Parameter
+      Title2: Texture UV
     Node4:
       DependencyIndex: 5
       LevelID: 67
@@ -2745,60 +2360,6 @@ Nodes:
       TemplateID: nodes_inputs_parameters_bool
       Title1: Bool Parameter
       Title2: Transformed UV 2
-    Node40:
-      CommentSizeX: 747
-      CommentSizeY: 641
-      DependencyIndex: 99
-      LevelID: 71
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Color:
-          ClassType1: COLOR
-          Variable: [0.4000000059604645, 0.699999988079071, 1.0, 0.10000000149011612]
-        Comment:
-          String: Opacity
-        NewComment:
-          ClassType1: TEXT
-          String: Opacity
-        NewToolTip:
-          ClassType1: TEXT
-          String: ""
-        Tooltip:
-          String: ""
-        Upgraded:
-          Variable: true
-      PositionX: 2155
-      PositionY: -808
-      TemplateID: node_util_comment
-      Title1: ""
-    Node41:
-      CommentSizeX: 749
-      CommentSizeY: 604
-      DependencyIndex: 100
-      LevelID: 368
-      NodeCount: 0
-      NodeType: 1
-      Ports:
-        Color:
-          ClassType1: COLOR
-          Variable: [0.4000000059604645, 0.699999988079071, 1.0, 0.10000000149011612]
-        Comment:
-          String: Base Color
-        NewComment:
-          ClassType1: TEXT
-          String: Base Color
-        NewToolTip:
-          ClassType1: TEXT
-          String: ""
-        Tooltip:
-          String: ""
-        Upgraded:
-          Variable: true
-      PositionX: 1873
-      PositionY: -1476
-      TemplateID: node_util_comment
-      Title1: ""
     Node5:
       DependencyIndex: 6
       LevelID: 13

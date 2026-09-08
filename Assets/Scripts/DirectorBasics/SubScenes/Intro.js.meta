@@ -28,6 +28,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     parent: false
+    tapScreen: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -38,6 +39,7 @@
     []
   DefaultScriptInputs:
     - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tapScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

@@ -1,0 +1,105 @@
+- !<AssetImportMetadata/564612fb-77cf-9067-25d2-0ec44ec79b27>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 8d5bcc38-2d75-4b09-a0b5-c01ebfb94ac9
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 8d5bcc38-2d75-4b09-a0b5-c01ebfb94ac9
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 6mpuaorfK8l1p3BMtPoMsA
+  AssetDataMap:
+    ObjectPrefab: !<own> 2b570f25-290a-4298-a163-1ad0b7c09c35
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXComponent/0d036a36-0adb-4e2a-88aa-f706cec32225>
+  PrefabRemaps:
+    []
+  Name: VFX Component 2
+  Enabled: true
+  RenderOrder: 1
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> cc6ca0bd-61c5-48e8-acb7-001f8d56fedc
+  SystemRenderLayerInfoMap:
+    0: !<VFXSystemRenderLayerInfo>
+      RenderLayerInfoMap:
+        render_0_0: !<VFXRenderLayerInfo>
+          Enabled: false
+          RenderLayers: 1
+- !<VFXComponent/1b305fa5-7acd-4ad4-8880-0dde6a0db0df>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 24f27212-5723-40b9-93fc-bd69292350d4
+  SystemRenderLayerInfoMap:
+    0: !<VFXSystemRenderLayerInfo>
+      RenderLayerInfoMap:
+        render_0_0: !<VFXRenderLayerInfo>
+          Enabled: false
+          RenderLayers: 1
+- !<ObjectPrefabAssetData/2b570f25-290a-4298-a163-1ad0b7c09c35>
+  Prototype: !<ObjectOwner/35c7faad-384f-4dc1-aea0-04ecfe631478>
+    PackagePath: ""
+    objects:
+      - !<own> ac5269e3-3064-4c87-992c-eb67f7425612
+- !<SceneObject/87dff117-2941-4861-b837-c82598b74439>
+  PrefabRemaps:
+    []
+  Name: Snow_ground
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0d036a36-0adb-4e2a-88aa-f706cec32225
+- !<SceneObject/ac5269e3-3064-4c87-992c-eb67f7425612>
+  PrefabRemaps:
+    []
+  Name: SnowVFX__PLACE_IN_SCENE
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ec99ffda-8a43-40aa-b277-0571076e3625
+    - !<own> 87dff117-2941-4861-b837-c82598b74439
+  Components:
+    []
+- !<SceneObject/ec99ffda-8a43-40aa-b277-0571076e3625>
+  PrefabRemaps:
+    []
+  Name: Snow
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1b305fa5-7acd-4ad4-8880-0dde6a0db0df

@@ -1,0 +1,38 @@
+- !<NativePackageDescriptor/948ea0d5-cc82-4915-88c6-b9f1ec4367bb>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 22
+    patch: 1
+    build: 26062503
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: Snow VFX This package contains the high quality Snow VFX asset. You can customize this particle system using VFX Editor. Click here to learn more about VFX Editor
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 101
+  ExportUid: edc46660-a3fa-4cc2-943b-afe6fc594506
+  ComponentUid: 4ff43688-d4ae-4e04-a6d4-243e309a282e
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  VersionPrerelease: ""
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

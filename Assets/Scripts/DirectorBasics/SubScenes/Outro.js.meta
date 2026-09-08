@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/e651eca9-28e9-487e-8159-394e8cfe9dcc>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a76c791a-3463-4662-adae-096827a2559e
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a76c791a-3463-4662-adae-096827a2559e
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 9a3357df-eeed-47e8-8ea2-22a24fd18ae3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/9a3357df-eeed-47e8-8ea2-22a24fd18ae3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  ComponentUid: e4684ae2-fca8-426a-9097-721e8e7b7d3a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    delayBeforeOutro: false
+    outroMaterials: false
+    parent: false
+    restartButton: false
+    restartDelay: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      outroMaterials: !<reference.Material[]>
+        []
+      delayBeforeOutro: 1.500000
+      restartButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      restartDelay: !<float> 1.000000
+  ScriptTypes:
+    -
+      {}
